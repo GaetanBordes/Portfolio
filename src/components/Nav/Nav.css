@@ -34,8 +34,8 @@
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 var(--space-md);
+  justify-content: flex-start;
+  padding: 0 1rem;
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(8px);
   box-shadow: var(--shadow-light);
@@ -45,7 +45,7 @@
 
 /* Conteneur du logo/titre (à gauche) */
 .nav-left {
-  flex: 1;
+  margin-right: 2rem;
 }
 
 .nav-logo {

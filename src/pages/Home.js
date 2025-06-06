@@ -20,8 +20,8 @@ function Home() {
         <div className="about-content">
           {/* Remplace 'avatar.jpg' par le nom de ton image dans public/images */}
           <img
-            src="/images/avatar.jpg"
-            alt="Photo de Prénom Nom"
+            src="/images/logo512.png"
+            alt="Photo de Gaëtan Bordes"
             className="about-avatar"
           />
           <div className="about-text">
