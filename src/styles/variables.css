@@ -1,0 +1,25 @@
+:root {
+  --color-bg: #ffffff;
+  --color-text: #222222;
+  --color-text-secondary: #555555;
+  --color-accent: #e07a5f;
+  --color-border: #e0e0e0;
+  --color-card-bg: #fafafa;
+
+  --font-sans: "Montserrat", sans-serif;
+  --font-serif: "Merriweather", serif;
+
+  --fs-hero-title: 3rem;
+  --fs-hero-sub: 1.25rem;
+  --fs-h1: 2rem;
+  --fs-h2: 1.5rem;
+  --fs-body: 1rem;
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+
+  --shadow-light: 0 2px 6px rgba(0, 0, 0, 0.05);
+}

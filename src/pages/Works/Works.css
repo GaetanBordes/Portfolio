@@ -1,0 +1,42 @@
+/* src/pages/Works/Works.css */
+
+.works-container {
+  padding: 1rem;
+}
+
+.works-title {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 0.25rem;
+  color: #222222;
+}
+
+.works-subtitle {
+  color: #555555;
+  margin-bottom: 1rem;
+}
+
+.works-nav {
+  margin-bottom: 1rem;
+}
+
+.works-link {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.works-link:hover {
+  color: #e07a5f; /* couleur d'accent si tu veux */
+}
+
+.works-link.active {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.works-content {
+  margin-top: 1rem;
+}

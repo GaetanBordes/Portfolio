@@ -1,0 +1,24 @@
+/* src/components/Card.css */
+
+.card {
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0.5rem;
+  width: 200px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #ffffff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+  font-size: 1.125rem;
+  color: #333333;
+  margin: 0;
+}
