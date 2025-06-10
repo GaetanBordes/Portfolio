@@ -9,6 +9,11 @@ body,
   padding: 0;
 }
 
+/* ✅ Ajout : transition douce sur le html (en plus du body) */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 /* 2) Appliquer le thème dynamiquement */
 body {
   background-color: var(--color-bg);
