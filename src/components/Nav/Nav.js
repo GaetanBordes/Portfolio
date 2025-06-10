@@ -17,12 +17,6 @@ function Nav() {
 
   return (
     <nav className="navbar">
-      {/* 1. Logo / titre à gauche */}
-      <div className="nav-left">
-        <h1 className="nav-logo">Gaëtan Bordes</h1>
-      </div>
-
-      {/* 2. Bouton “hamburger” (affiché uniquement en mobile) */}
       <button
         className="nav-toggle"
         onClick={toggleMenu}

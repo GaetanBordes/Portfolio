@@ -1,0 +1,5 @@
+/* src/styles/Layout.css */
+.page-container {
+  padding: 1rem;
+  padding-top: 80px; /* Ajusté à la hauteur réelle de ta navbar */
+}

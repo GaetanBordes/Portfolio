@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink, Routes, Route } from "react-router-dom";
+import "../Works/Works.css";
 
 import Exercices from "./Exercices";
 import CaseStudy from "./CaseStudy";
@@ -12,7 +13,7 @@ function Works() {
   };
 
   return (
-    <div style={{ padding: "1rem" }}>
+    <div className="page-container">
       <h1>Works</h1>
       <p>Welcome on the works page. Please, select a category :</p>
 
@@ -46,7 +47,6 @@ function Works() {
         <Route path="exercices" element={<Exercices />} />
         <Route path="case-study" element={<CaseStudy />} />
         <Route path="concret-case" element={<ConcretCase />} />
-        {/* Si route non trouvée sous /works */}
         <Route path="*" element={<p>Catégorie non trouvée.</p>} />
       </Routes>
     </div>

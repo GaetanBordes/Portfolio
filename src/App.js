@@ -2,6 +2,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav/Nav";
+import "./styles/Layout.css";
 import "./App.css"; // votre CSS global ou celui contenant les styles de la nav
 import Home from "./pages/Home";
 import About from "./pages/About";

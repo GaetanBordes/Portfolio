@@ -2,9 +2,9 @@ import React from "react";
 
 function Contact() {
   return (
-    <div style={{ padding: "1rem" }}>
+    <div className="page-container">
       <h1>Contact</h1>
-      <p>Contactez-moi à l'adresse email@example.com.</p>
+      <p>Contactez-moi à l'adresse bordes.gaetan33@gmail.com</p>
     </div>
   );
 }
