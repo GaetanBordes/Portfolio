@@ -1,49 +1,45 @@
 // src/pages/Home.js
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Home.css"; // Importe le CSS dédié à la Home
+import { useTranslation } from "react-i18next";
+import "./Home.css";
 
 function Home() {
+  const { t } = useTranslation();
+
   return (
     <div className="home-container">
       {/* Section Hero */}
       <section className="hero">
         <h1 className="hero-title">Gaëtan Bordes</h1>
-        <p className="hero-subtitle">Développeur Web & UX Designer</p>
+        <p className="hero-subtitle">{t("home.subtitle")}</p>
         <Link to="/works" className="hero-cta">
-          Voir mes projets
+          {t("home.cta")}
         </Link>
       </section>
 
-      {/* Section À propos (résumé) */}
+      {/* Section À propos */}
       <section className="about-summary">
         <div className="about-content">
-          {/* Remplace 'avatar.jpg' par le nom de ton image dans public/images */}
           <img
             src="/images/logo512.png"
             alt="Photo de Gaëtan Bordes"
             className="about-avatar"
           />
           <div className="about-text">
-            <h2>À propos</h2>
-            <p>
-              Passionné par la création d’interfaces épurées et performantes, je
-              transforme chaque maquette en une expérience utilisateur fluide.
-              Issu d’une formation en développement web, j’ai déjà réalisé
-              plusieurs projets concrets pour des associations et des amis.
-            </p>
+            <h2>{t("home.aboutTitle")}</h2>
+            <p>{t("home.aboutText")}</p>
             <Link to="/about" className="button-link">
-              En savoir plus
+              {t("home.aboutLink")}
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Section Aperçu des projets */}
+      {/* Section Projets */}
       <section className="projects-preview">
-        <h2 className="projects-title">Projets sélectionnés</h2>
+        <h2 className="projects-title">{t("home.projectsTitle")}</h2>
         <div className="projects-grid">
-          {/* Chaque card affiche une image + titre + type de projet */}
           <div className="project-card">
             <div className="project-media">
               <img
@@ -54,9 +50,10 @@ function Home() {
             </div>
             <div className="project-info">
               <h3 className="project-name">Video Game informations</h3>
-              <p className="project-type">Exercice React</p>
+              <p className="project-type">{t("home.projectType.exercise")}</p>
             </div>
           </div>
+
           <div className="project-card">
             <div className="project-media">
               <img
@@ -67,9 +64,10 @@ function Home() {
             </div>
             <div className="project-info">
               <h3 className="project-name">Nike, the new website</h3>
-              <p className="project-type">Case Study</p>
+              <p className="project-type">{t("home.projectType.caseStudy")}</p>
             </div>
           </div>
+
           <div className="project-card">
             <div className="project-media">
               <img
@@ -80,13 +78,14 @@ function Home() {
             </div>
             <div className="project-info">
               <h3 className="project-name">My friend bakery</h3>
-              <p className="project-type">Projet concret</p>
+              <p className="project-type">{t("home.projectType.real")}</p>
             </div>
           </div>
         </div>
+
         <div className="projects-more">
           <Link to="/works" className="button-cta">
-            Voir tous mes travaux
+            {t("home.projectsMore")}
           </Link>
         </div>
       </section>

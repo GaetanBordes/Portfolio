@@ -1,0 +1,26 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "works": "Works",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Welcome to my portfolio",
+    "subtitle": "I’m a front-end web developer",
+    "cta": "See my projects",
+    "aboutTitle": "About me",
+    "aboutText": "Passionate about creating clean and efficient interfaces, I turn every mockup into a smooth user experience.",
+    "aboutLink": "Learn more",
+    "projectsTitle": "Selected Projects",
+    "projectType": {
+      "exercise": "React Exercise",
+      "caseStudy": "Case Study",
+      "real": "Real Project"
+    },
+    "projectsMore": "See all my works"
+  },
+  "button": {
+    "seeMore": "See more"
+  }
+}

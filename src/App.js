@@ -23,13 +23,6 @@ function App() {
 
   return (
     <div>
-      <button
-        onClick={toggleTheme}
-        style={{ position: "fixed", top: "1rem", right: "1rem", zIndex: 9999 }}
-      >
-        {theme === "light" ? "🌙 Sombre" : "☀️ Clair"}
-      </button>
-
       <Nav />
 
       <Routes>

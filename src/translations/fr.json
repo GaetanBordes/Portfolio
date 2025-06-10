@@ -1,0 +1,26 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "works": "Travaux",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Bienvenue sur mon portfolio",
+    "subtitle": "Je suis développeur web front-end",
+    "cta": "Voir mes projets",
+    "aboutTitle": "À propos de moi",
+    "aboutText": "Passionné par la création d’interfaces épurées et performantes, je transforme chaque maquette en une expérience utilisateur fluide.",
+    "aboutLink": "En savoir plus",
+    "projectsTitle": "Projets sélectionnés",
+    "projectType": {
+      "exercise": "Exercice React",
+      "caseStudy": "Étude de cas",
+      "real": "Projet concret"
+    },
+    "projectsMore": "Voir tous mes travaux"
+  },
+  "button": {
+    "seeMore": "Voir plus"
+  }
+}
