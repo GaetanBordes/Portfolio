@@ -1,7 +1,8 @@
 // src/App.js
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav/Nav";
+import "./styles/variables.css";
 import "./styles/Layout.css";
 import "./App.css"; // votre CSS global ou celui contenant les styles de la nav
 import Home from "./pages/Home";
@@ -10,12 +11,27 @@ import Works from "./pages/Works/Works";
 import Contact from "./pages/Contact";
 
 function App() {
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  };
+
   return (
     <div>
-      {/* Utilisation du composant Nav à la place de la nav “en dur” */}
+      <button
+        onClick={toggleTheme}
+        style={{ position: "fixed", top: "1rem", right: "1rem", zIndex: 9999 }}
+      >
+        {theme === "light" ? "🌙 Sombre" : "☀️ Clair"}
+      </button>
+
       <Nav />
 
-      {/* Définition des routes */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

@@ -9,15 +9,15 @@ body,
   padding: 0;
 }
 
-/* 2) Votre reset / typography existants */
+/* 2) Appliquer le thème dynamiquement */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: var(--font-sans); /* ✅ on utilise la variable globale */
 }
 
+/* 3) Typo monospace pour les balises <code> */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

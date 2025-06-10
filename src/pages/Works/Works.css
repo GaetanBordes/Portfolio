@@ -9,11 +9,11 @@
   font-size: 2rem;
   font-weight: 300;
   margin-bottom: 0.25rem;
-  color: #222222;
+  color: var(--color-text);
 }
 
 .works-subtitle {
-  color: #555555;
+  color: var(--color-text-secondary);
   margin-bottom: 1rem;
 }
 
@@ -24,18 +24,19 @@
 .works-link {
   margin-right: 1rem;
   text-decoration: none;
-  color: #333333;
+  color: var(--color-text-secondary);
   font-weight: 400;
   transition: color 0.2s;
 }
 
 .works-link:hover {
-  color: #e07a5f; /* couleur d'accent si tu veux */
+  color: var(--color-accent);
 }
 
 .works-link.active {
   font-weight: 600;
   text-decoration: underline;
+  color: var(--color-text);
 }
 
 .works-content {
