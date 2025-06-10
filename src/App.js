@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav/Nav";
@@ -10,12 +9,24 @@ import About from "./pages/About";
 import Works from "./pages/Works/Works";
 import Contact from "./pages/Contact";
 
+// 🚀 Import de AOS
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function App() {
   const [theme, setTheme] = useState("light");
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
   }, [theme]);
+
+  // 🚀 Initialisation AOS
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // durée des animations en ms
+      once: true, // joue l'animation une seule fois
+    });
+  }, []);
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));

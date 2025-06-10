@@ -4,13 +4,16 @@ import "./About.css";
 function About() {
   return (
     <div className="page-container">
-      <h1 className="about-title">À propos de moi</h1>
-      <p className="about-intro">
+      <h1 className="about-title" data-aos="fade-down">
+        À propos de moi
+      </h1>
+
+      <p className="about-intro" data-aos="fade-up">
         Je suis un développeur web passionné par les interfaces élégantes, les
         performances et l'expérience utilisateur.
       </p>
 
-      <section className="about-section">
+      <section className="about-section" data-aos="fade-right">
         <h2>Mon parcours</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
@@ -26,7 +29,7 @@ function About() {
         </p>
       </section>
 
-      <section className="about-section">
+      <section className="about-section" data-aos="fade-left">
         <h2>Mes compétences</h2>
         <ul>
           <li>HTML, CSS, JavaScript, React</li>
@@ -35,7 +38,7 @@ function About() {
         </ul>
       </section>
 
-      <section className="about-section">
+      <section className="about-section" data-aos="fade-up">
         <h2>Mes objectifs</h2>
         <p>
           Je cherche à rejoindre une équipe dynamique ou travailler en freelance

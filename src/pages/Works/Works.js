@@ -15,15 +15,18 @@ function Works() {
 
   return (
     <div className="works-container">
-      <h1 className="works-title">Mes Réalisations</h1>
-      <p className="works-subtitle">
+      <h1 className="works-title" data-aos="fade-up">
+        Mes Réalisations
+      </h1>
+
+      <p className="works-subtitle" data-aos="fade-up" data-aos-delay="100">
         Voici deux projets concrets réalisés pendant ma formation. Cliquez sur
         chaque vignette pour voir le code source.
       </p>
 
       {/* Grille des projets réels */}
       <div className="works-grid">
-        <div className="project-card">
+        <div className="project-card" data-aos="zoom-in-up">
           <img
             src="/images/chaton-thumb.jpg"
             alt="Aperçu Chaton Project"
@@ -39,7 +42,11 @@ function Works() {
           </a>
         </div>
 
-        <div className="project-card">
+        <div
+          className="project-card"
+          data-aos="zoom-in-up"
+          data-aos-delay="100"
+        >
           <img
             src="/images/odynest-thumb.jpg"
             alt="Aperçu Odynest Project"
@@ -57,7 +64,7 @@ function Works() {
       </div>
 
       {/* Navigation vers les catégories */}
-      <nav className="works-nav">
+      <nav className="works-nav" data-aos="fade-in" data-aos-delay="200">
         <NavLink
           to="exercices"
           className="works-link"
@@ -82,7 +89,7 @@ function Works() {
       </nav>
 
       {/* Contenu dynamique */}
-      <div className="works-content">
+      <div className="works-content" data-aos="fade-up" data-aos-delay="300">
         <Routes>
           <Route index element={<p>Sélectionnez une catégorie ci-dessus.</p>} />
           <Route path="exercices" element={<Exercices />} />

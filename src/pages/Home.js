@@ -1,4 +1,3 @@
-// src/pages/Home.js
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -10,23 +9,23 @@ function Home() {
   return (
     <div className="home-container">
       {/* Section Hero */}
-      <section className="hero">
+      <section className="hero" data-aos="fade-up">
         <h1 className="hero-title">Gaëtan Bordes</h1>
         <p className="hero-subtitle">{t("home.subtitle")}</p>
-        <Link to="/works" className="hero-cta">
+        <Link to="/works" className="hero-cta" data-aos="zoom-in">
           {t("home.cta")}
         </Link>
       </section>
 
       {/* Section À propos */}
-      <section className="about-summary">
+      <section className="about-summary" data-aos="fade-right">
         <div className="about-content">
           <img
             src="/images/logo512.png"
             alt="Photo de Gaëtan Bordes"
             className="about-avatar"
           />
-          <div className="about-text">
+          <div className="about-text" data-aos="fade-left">
             <h2>{t("home.aboutTitle")}</h2>
             <p>{t("home.aboutText")}</p>
             <Link to="/about" className="button-link">
@@ -37,10 +36,10 @@ function Home() {
       </section>
 
       {/* Section Projets */}
-      <section className="projects-preview">
+      <section className="projects-preview" data-aos="fade-up">
         <h2 className="projects-title">{t("home.projectsTitle")}</h2>
         <div className="projects-grid">
-          <div className="project-card">
+          <div className="project-card" data-aos="zoom-in-up">
             <div className="project-media">
               <img
                 src="/images/video-game-thumb.jpg"
@@ -54,7 +53,11 @@ function Home() {
             </div>
           </div>
 
-          <div className="project-card">
+          <div
+            className="project-card"
+            data-aos="zoom-in-up"
+            data-aos-delay="100"
+          >
             <div className="project-media">
               <img
                 src="/images/nike-thumb.jpg"
@@ -68,7 +71,11 @@ function Home() {
             </div>
           </div>
 
-          <div className="project-card">
+          <div
+            className="project-card"
+            data-aos="zoom-in-up"
+            data-aos-delay="200"
+          >
             <div className="project-media">
               <img
                 src="/images/bakery-thumb.jpg"
@@ -83,7 +90,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="projects-more">
+        <div className="projects-more" data-aos="fade-up">
           <Link to="/works" className="button-cta">
             {t("home.projectsMore")}
           </Link>
